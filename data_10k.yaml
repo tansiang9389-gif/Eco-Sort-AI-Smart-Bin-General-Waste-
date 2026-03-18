@@ -1,0 +1,23 @@
+# =============================================================================
+# EcoSort — 10K Dataset Configuration
+# =============================================================================
+# Place your 10,000-image dataset in: datasets/ecosort_10k/
+# Recommended split: 8,000 train / 2,000 val (80/20)
+#
+# With only 10K images (below the 15K reliability benchmark from
+# E(n) = a * n^(-b)), aggressive augmentation in the training script
+# compensates for the limited diversity.
+# =============================================================================
+
+path: datasets/ecosort_10k
+train: train/images
+val: val/images
+test: test/images
+
+nc: 4
+
+names:
+  0: Plastic
+  1: Paper
+  2: Metal
+  3: Others

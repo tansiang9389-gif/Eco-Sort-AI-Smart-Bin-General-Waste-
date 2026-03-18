@@ -1,0 +1,34 @@
+# =============================================================================
+# EcoSort — YOLO26 Waste Detection Dataset Configuration
+# =============================================================================
+# 4 waste categories for real-time bin-interior classification.
+#
+# Dataset structure (YOLO format):
+#   datasets/
+#   └── ecosort/
+#       ├── train/
+#       │   ├── images/    ← Training images (.jpg, .png)
+#       │   └── labels/    ← YOLO-format labels (.txt)
+#       ├── val/
+#       │   ├── images/    ← Validation images (15-20% of data)
+#       │   └── labels/
+#       └── test/          ← (Optional) Hold-out test set
+#           ├── images/
+#           └── labels/
+#
+# Label format per line: <class_id> <x_center> <y_center> <width> <height>
+# All coordinates normalized to [0, 1] relative to image dimensions.
+# =============================================================================
+
+path: datasets/ecosort
+train: train/images
+val: val/images
+test: test/images
+
+nc: 4
+
+names:
+  0: Plastic
+  1: Paper
+  2: Metal
+  3: Others

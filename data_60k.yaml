@@ -1,0 +1,23 @@
+# =============================================================================
+# EcoSort — 60K Dataset Configuration
+# =============================================================================
+# Place your 60,000-image dataset in: datasets/ecosort_60k/
+# Recommended split: 48,000 train / 12,000 val (80/20)
+#
+# 60K is 4x above the 15K reliability benchmark. Per E(n) = a * n^(-b),
+# error at n=60K drops to ~50% of the 15K baseline (for b ≈ 0.5).
+# The dataset's own diversity is the primary regularizer.
+# =============================================================================
+
+path: datasets/ecosort_60k
+train: train/images
+val: val/images
+test: test/images
+
+nc: 4
+
+names:
+  0: Plastic
+  1: Paper
+  2: Metal
+  3: Others
