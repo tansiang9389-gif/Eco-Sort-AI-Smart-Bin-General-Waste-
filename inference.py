@@ -64,7 +64,7 @@ CLASS_COLORS = {
 BIN_MAP = {
     "Plastic": "RECYCLING (Yellow Bin)",
     "Paper":   "RECYCLING (Blue Bin)",
-    "Metal":   "RECYCLING (Yellow Bin)",
+    "Metal":   "RECYCLING (Red Bin)",
     "Others":  "GENERAL WASTE (Black Bin)",
 }
 

@@ -6,7 +6,7 @@ Real-time waste detection and classification using YOLO26 (YOLOv26) for embedded
 |----------|----------|-------------------|
 | 0 | Plastic | Recycling (Yellow) |
 | 1 | Paper | Recycling (Blue) |
-| 2 | Metal | Recycling (Yellow) |
+| 2 | Metal | Recycling (Red) |
 | 3 | Others | General Waste (Black) |
 
 ---
